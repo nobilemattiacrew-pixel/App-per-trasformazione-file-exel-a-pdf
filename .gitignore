@@ -1,0 +1,5 @@
+__pycache__/
+build/
+dist/*
+!dist/fogli-in-pdf_1.0.0_amd64.deb
+*.spec

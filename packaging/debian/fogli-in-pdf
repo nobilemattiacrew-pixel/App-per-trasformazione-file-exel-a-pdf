@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /usr/bin/python3 /usr/lib/fogli-in-pdf/converter_excel_pdf.py "$@"

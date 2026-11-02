@@ -1,0 +1,10 @@
+Package: fogli-in-pdf
+Version: 1.0.0
+Section: office
+Priority: optional
+Architecture: amd64
+Maintainer: App Locale <app-locale@localhost>
+Depends: python3 (>= 3.10), python3-tk, libreoffice-calc
+Description: Convertitore locale di fogli Excel in PDF
+ Applicazione desktop per selezionare più fogli Excel e convertirli in PDF
+ usando LibreOffice. I file restano sul computer dell'utente.

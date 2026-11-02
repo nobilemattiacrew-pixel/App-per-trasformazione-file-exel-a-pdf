@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f3ec">
+  <title>Fogli in PDF</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="/" aria-label="Fogli in PDF, home">
+      <span class="brand-mark" aria-hidden="true">F</span>
+      <span>fogli<span class="wordmark-light">in</span>pdf</span>
+    </a>
+    <div class="topbar-actions">
+      <a class="download-app" href="/download/linux" download>Linux <span aria-hidden="true">↓</span></a>
+      <a class="download-app" href="https://github.com/nobilemattiacrew-pixel/App-per-trasformazione-file-exel-a-pdf/releases/latest" target="_blank" rel="noopener noreferrer">Windows / macOS <span aria-hidden="true">↗</span></a>
+      <div class="service-state"><span class="state-dot"></span>Pronto</div>
+    </div>
+  </header>
+
+  <main class="workspace">
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">CONVERSIONE DOCUMENTI <span>01 / 01</span></p>
+      <h1 id="page-title">Da foglio<br> a <span>PDF.</span></h1>
+      <p class="intro-copy">Scegli i file Excel e raccogli i PDF in un unico download.</p>
+      <div class="formats" aria-label="Formati supportati">
+        <span>.XLSX</span><span>.XLS</span><span>.XLSM</span><span>.XLSB</span>
+      </div>
+    </section>
+
+    <section class="converter" aria-label="Selezione e conversione file">
+      <div class="section-heading">
+        <div>
+          <p class="step-label">IL TUO DOCUMENTO</p>
+          <h2>Seleziona i file</h2>
+        </div>
+        <span class="file-count" id="file-count">0 FILE</span>
+      </div>
+
+      <input id="file-input" class="visually-hidden" type="file" multiple accept=".xlsx,.xls,.xlsm,.xlsb">
+      <div class="dropzone" id="dropzone" tabindex="0" role="button" aria-label="Aggiungi file Excel">
+        <span class="upload-icon" aria-hidden="true">↑</span>
+        <div class="drop-copy"><strong>Trascina qui i file</strong><span>oppure scegli dal dispositivo</span></div>
+        <button class="choose-button" id="choose-button" type="button">Sfoglia file</button>
+      </div>
+
+      <div class="list-heading">
+        <span>FILE AGGIUNTI</span>
+        <button class="text-button" id="clear-button" type="button" hidden>Rimuovi tutti</button>
+      </div>
+      <ul class="file-list" id="file-list" aria-live="polite"></ul>
+      <p class="empty-state" id="empty-state">I file selezionati compariranno qui.</p>
+    </section>
+
+    <aside class="action-panel" aria-label="Avvia conversione">
+      <div class="panel-topline"><span>PRONTO PER L'EXPORT</span><span class="panel-spark" aria-hidden="true">✳</span></div>
+      <div class="total-number" id="total-number">00</div>
+      <p class="total-label">file selezionati</p>
+      <div class="panel-divider"></div>
+      <p class="result-note">Un PDF per ogni foglio Excel. Tutti insieme, in un archivio ZIP.</p>
+      <button class="convert-button" id="convert-button" type="button" disabled>
+        <span>Converti e scarica</span><span aria-hidden="true">↗</span>
+      </button>
+      <div class="status-message" id="status-message" role="status" aria-live="polite">Aggiungi almeno un file per iniziare.</div>
+      <div class="privacy-note"><span aria-hidden="true">◆</span> I file vengono elaborati in questa sessione.</div>
+    </aside>
+  </main>
+  <footer class="footer"><span>FOGLI IN PDF</span><span>Un passaggio, fatto.</span></footer>
+</body>
+</html>
