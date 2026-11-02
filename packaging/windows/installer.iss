@@ -9,7 +9,7 @@ AppVersion={#AppVersion}
 AppPublisher={#AppPublisher}
 DefaultDirName={autopf}\Fogli in PDF
 DefaultGroupName={#AppName}
-OutputDir=dist\installer
+OutputDir=..\..\dist\installer
 OutputBaseFilename=FogliInPDF-Setup-Windows
 ArchitecturesAllowed=x64
 ArchitecturesInstallIn64BitMode=x64
@@ -20,7 +20,7 @@ WizardStyle=modern
 UninstallDisplayIcon={app}\FogliInPDF.exe
 
 [Files]
-Source: "dist\FogliInPDF\*"; DestDir: "{app}"; Flags: recursesubdirs createallsubdirs ignoreversion
+Source: "..\..\dist\FogliInPDF\*"; DestDir: "{app}"; Flags: recursesubdirs createallsubdirs ignoreversion
 
 [Icons]
 Name: "{autoprograms}\Fogli in PDF"; Filename: "{app}\FogliInPDF.exe"
